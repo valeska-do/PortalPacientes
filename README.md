@@ -1,5 +1,5 @@
 <h1 align="center">Hola, soy Valeska Ormeño</h1>
-<h3 align="center">Realizadora y disiemadora audiovisual, con creciente interés en diseño UX/UI y diseño web</h3>
+<h3 align="center">Realizadora y diseñadora audiovisual, con interés en diseño UX/UI y diseño web</h3>
 
 - Actualmente estoy trabajando en el **Portal de pacientes**
 
