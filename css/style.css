@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-header {
+.cabeza {
     height: 150px;
     width: auto;
     position: sticky;
@@ -18,7 +18,7 @@ header {
 
 }
 
-header h1 a {
+.cabeza h1 a {
     text-decoration: none;
     color: #f5fef5;
 }
@@ -32,18 +32,18 @@ header h1 a {
     color: #f5fef5;
 }
 
-header nav ul li a {
+.cabeza nav ul li a {
     text-decoration: none;
     color: #f5fef5;
     margin: 30px;
 }
 
-header nav ul li a:hover {
+.cabeza  nav ul li a:hover {
     font-weight: 600;
     color: #001f33;
 }
 
-body {
+.cuerpo {
     font-family: 'Asap', sans-serif;
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #001f33;
@@ -233,7 +233,7 @@ body {
     background-color: #00AEEA;
 }
 
-footer {
+.pie {
     background-color: #f9f7f0;
     box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.25);
     height: 250px;
@@ -244,14 +244,78 @@ footer {
     padding-top: 20px;
 }
 
-/* PAGINA DE NOVEDADES */
-.encabeza {
+/* PAGINA DE NOSOTROS */
+.flexnosotros {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+
+.txtnosotros {
     width: 70%;
+    margin-top: 50px;
+}
+
+.txtnosotros h2 {
+    text-align: center;
+    padding-top: 30px;
+    background-color: #b2d9f7;
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.recientes {
+    width: 25%;
+    height: 630px;
+    border: 2px solid #bfc6ce;
+    border-radius: 20px;
+    margin-top: 200px;
+    padding: 10px;
+}
+
+.listanoticia {
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 50px;
 
+}
+
+.recientes h5 {
+    text-align: center;
+    color: #3d3c3b;
+    margin-top: 20px;
+    margin-bottom: 30px
+}
+
+.recientes ul li a {
+    color: #3d3c3b;
+}
+
+
+/* PAGINA DE NOVEDADES */
+.encabeza {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.encabeza h2 {
+    text-align: center;
+    padding-top: 30px;
+    background-color: #b2d9f7;
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.encabeza p {
+    width: 70%;
+    margin-left: 15%;
 }
 
 .cards {
@@ -337,19 +401,44 @@ footer {
     padding-right: 10px;
 }
 
-/* PAGINA DE GESTOR */
-.generalform {
-    width: 50%;
-    margin-left: 25%;
-    padding: 10px;
-}
 
-.iniciar {
+/* PAGINA DE RED HOSPI */
+.flexhospitales {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+ }
+.red {
+    width: 800px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    background-color: #b2d9f7;
+    padding: 25px;
+    border-radius: 10px;
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+}
+.txtred{
+    width: 70%;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
+/* PAGINA DE GESTOR */
+.flexgestor{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.txtgestor{
+    width: 45%;
+}
+.generalform h2 {
+    text-align: center;
+}
 
 
 /* APLICACION DE MEDIA QUERIES */
@@ -436,7 +525,7 @@ footer {
 }
 
 @media screen and (max-width: 1410px) {
-    header {
+    .cabeza {
         height: 200px;
         flex-direction: column;
         align-items: center;
@@ -559,7 +648,7 @@ footer {
         width: 400px;
     }
 
-    footer {
+    .pie {
         margin-top: 100px;
     }
 }
@@ -575,7 +664,7 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
-    header {
+    .cabeza {
         height: 150px;
     }
 
