@@ -1,0 +1,33 @@
+// PAGINA DE RED HOSPI 
+.cuerpo {
+    main {
+        .flexhospitales {
+            display: flex;
+            width: 80%;
+            margin-left: 10%;
+            justify-content: space-between;
+
+            .txtred {
+                width: 70%;
+                margin-top: 50px;
+                margin-right: 50px;
+            }
+
+            div {
+                .red {
+                    width: 800px;
+                    height: 350px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 50px;
+                    background-color: #b2d9f7;
+                    padding: 25px;
+                    border-radius: 10px;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+}

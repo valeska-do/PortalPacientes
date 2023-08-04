@@ -1,0 +1,55 @@
+// Pagina nosotros
+.cuerpo {
+    main {
+        .flexnosotros {
+            display: flex;
+            width: 80%;
+            margin-left: 10%;
+            justify-content: space-between;
+
+            .txtnosotros {
+                width: 70%;
+                margin-top: 50px;
+
+                h2 {
+                    text-align: center;
+                    padding-top: 30px;
+                    background-color: #b2d9f7;
+                    border-radius: 10px;
+                    height: 100px;
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .recientes {
+                width: 25%;
+                height: 630px;
+                border: 2px solid #bfc6ce;
+                border-radius: 20px;
+                margin-top: 200px;
+                padding: 10px;
+
+                h5 {
+                    text-align: center;
+                    color: #3d3c3b;
+                    margin-top: 20px;
+                    margin-bottom: 30px
+                }
+
+                .listanoticia {
+                    height: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    li {
+                        a {
+                            color: #3d3c3b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

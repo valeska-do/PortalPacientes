@@ -1,0 +1,109 @@
+//Pagina novedades
+.cuerpo {
+    .novedades {
+        .encabeza {
+            width: 80%;
+            margin-top: 50px;
+            margin-left: 10%;
+
+            h2 {
+                text-align: center;
+                padding-top: 30px;
+                background-color: #b2d9f7;
+                border-radius: 10px;
+                height: 100px;
+                width: 100%;
+                margin-bottom: 50px;
+
+            }
+
+            p {
+                width: 70%;
+                margin-left: 15%;
+            }
+
+        }
+
+        .cards {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-rows: 100px repeat(4 500px) 100px;
+            grid-template-columns: repeat(3 1fr);
+            margin-right: 50px;
+            margin-left: 50px;
+
+            .txtnovedad {
+                grid-area: 1/1/2/4;
+                height: 100px;
+
+                .centro {}
+            }
+
+            .noticia .uno {
+                grid-area: 2/1/3/2;
+                height: 400px;
+            }
+
+            .noticia .dos {
+                grid-area: 2/2/3/3;
+                height: 400px;
+            }
+
+            .noticia .tres {
+                grid-area: 2/3/3/4;
+                height: 400px;
+            }
+
+            .noticia .cuatro {
+                grid-area: 3/1/4/2;
+                height: 400px;
+            }
+
+            .noticia .cinco {
+                grid-area: 3/2/4/3;
+                height: 400px;
+            }
+
+            .noticia .seis {
+                grid-area: 3/3/4/4;
+                height: 400px;
+            }
+
+            .noticia .siete {
+                grid-area: 4/1/5/2;
+                height: 400px;
+            }
+
+            .noticia .ocho {
+                grid-area: 4/2/5/3;
+                height: 400px;
+            }
+
+            .noticia .nueve {
+                grid-area: 4/3/5/4;
+                height: 400px;
+            }
+
+            .noticia .diez {
+                grid-area: 5/1/6/2;
+                height: 400px;
+            }
+
+            .noticia .once {
+                grid-area: 5/2/6/3;
+                height: 400px;
+            }
+
+            .noticia .doce {
+                grid-area: 5/3/6/4;
+                height: 400px;
+            }
+
+            .boton {
+                grid-area: 6/1/7/4;
+                height: 100px;
+            }
+
+        }
+    }
+}
