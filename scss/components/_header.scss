@@ -1,4 +1,10 @@
 .cuerpo {
+    a {
+        .logo {
+            height: 70px;
+        }
+    }
+
     .cabeza {
         height: 150px;
         width: auto;
@@ -24,17 +30,17 @@
 
         nav {
             padding: 10px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    font-size: 24px;
-    color: #f5fef5;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            font-size: 24px;
+            color: #f5fef5;
 
             .flexnav {
-                
+
 
                 li {
-                    
+
 
                     a {
                         text-decoration: none;
