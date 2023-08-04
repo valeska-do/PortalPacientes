@@ -25,17 +25,18 @@
     color: #f5fef5; }
   .cuerpo .cabeza nav .flexnav {
     padding: 10px;
+    display: flex;
+    list-style: none;
     justify-content: space-between;
     font-size: 24px;
     color: #f5fef5; }
-    .cuerpo .cabeza nav .flexnav ul {
-      list-style: none;
-      display: flex; }
-      .cuerpo .cabeza nav .flexnav ul li {
-        margin: 30px; }
-        .cuerpo .cabeza nav .flexnav ul li a {
-          text-decoration: none;
-          color: #f5fef5; }
+    .cuerpo .cabeza nav .flexnav ul li a {
+      text-decoration: none;
+      color: #f5fef5;
+      margin: 30px; }
+      .cuerpo .cabeza nav .flexnav ul li a:hover {
+        font-weight: 600;
+        color: #001f33; }
 
 .cuerpo .orden {
   display: grid;
