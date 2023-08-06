@@ -20,23 +20,23 @@
   font-family: 'Be Vietnam Pro', sans-serif;
   color: #001f33;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4); }
-  .cuerpo .cabeza h1 a {
-    text-decoration: none;
-    color: #f5fef5; }
+  .cuerpo .cabeza .logo img {
+    height: 70px;
+    width: auto; }
   .cuerpo .cabeza nav .flexnav {
-    padding: 10px;
     display: flex;
-    list-style: none;
-    justify-content: space-between;
-    font-size: 24px;
-    color: #f5fef5; }
-    .cuerpo .cabeza nav .flexnav ul li a {
-      text-decoration: none;
-      color: #f5fef5;
-      margin: 30px; }
-      .cuerpo .cabeza nav .flexnav ul li a:hover {
-        font-weight: 600;
-        color: #001f33; }
+    padding: 10px;
+    margin: 0;
+    width: 900px;
+    align-items: center;
+    justify-content: space-between; }
+    .cuerpo .cabeza nav .flexnav li {
+      list-style: none; }
+      .cuerpo .cabeza nav .flexnav li a {
+        text-decoration: none;
+        color: #f5fef5;
+        font-size: 24px;
+        padding: 10px; }
 
 .cuerpo .orden {
   display: grid;
@@ -59,7 +59,7 @@
     .cuerpo .orden .carrusel .texto {
       grid-area: parrafos;
       padding-left: 100px;
-      padding-top: 20px; }
+      padding-top: 70px; }
       .cuerpo .orden .carrusel .texto h2 {
         color: white;
         font-size: 40px; }
@@ -70,7 +70,7 @@
       grid-area: boton;
       grid-column: 2/3;
       grid-row: 1/2;
-      padding-top: 80px;
+      padding-top: 120px;
       padding-left: 100px; }
       .cuerpo .orden .carrusel .botoninicio h2 a {
         font-size: 28px;
@@ -84,66 +84,72 @@
         -moz-box-shadow: 2px 3px 13px 7px rgba(133, 133, 133, 0.33); }
         .cuerpo .orden .carrusel .botoninicio h2 a:hover {
           background-color: #00AEEA; }
-
-.cuerpo .caracteristicas {
-  grid-area: caracteristicas; }
-  .cuerpo .caracteristicas .centro {
-    text-align: center;
-    padding-top: 40px;
-    color: #001f33; }
-  .cuerpo .caracteristicas .gridcaracter {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 110px; }
-    .cuerpo .caracteristicas .gridcaracter .cara {
-      width: 400px;
-      height: 400px;
-      border-radius: 5px;
+  .cuerpo .orden .caracteristicas {
+    grid-area: caracteristicas; }
+    .cuerpo .orden .caracteristicas .centro {
       text-align: center;
-      margin-right: 20px; }
-      .cuerpo .caracteristicas .gridcaracter .cara .uno {
-        background-color: #0260A6;
-        grid-area: 1/1/2/2;
-        margin-right: 20px; }
-        .cuerpo .caracteristicas .gridcaracter .cara .uno h3 {
-          color: white;
-          padding-top: 120px; }
-      .cuerpo .caracteristicas .gridcaracter .cara .dos {
-        background-color: #017CC0;
-        grid-area: 1/2/2/3; }
-    .cuerpo .caracteristicas .gridcaracter .tres {
-      background-color: #0197D6;
-      grid-area: 1/3/2/4; }
-    .cuerpo .caracteristicas .gridcaracter .cuatro {
-      background-color: #00AEEA;
-      grid-area: 1/4/2/5; }
+      padding-top: 60px;
+      padding-bottom: 40px;
+      color: #001f33; }
+    .cuerpo .orden .caracteristicas .gridcaracter {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-left: 3%; }
+      .cuerpo .orden .caracteristicas .gridcaracter .cara {
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        text-align: center;
+        margin-right: 20px;
+        padding-top: 30%;
+        background-color: #9CDBFC; }
+        .cuerpo .orden .caracteristicas .gridcaracter .cara .uno {
+          background-color: #0260A6;
+          grid-area: 1/1/2/2;
+          margin-right: 20px; }
+        .cuerpo .orden .caracteristicas .gridcaracter .cara .dos {
+          background-color: #017CC0;
+          grid-area: 1/2/2/3; }
+        .cuerpo .orden .caracteristicas .gridcaracter .cara .tres {
+          background-color: #0197D6;
+          grid-area: 1/3/2/4; }
+        .cuerpo .orden .caracteristicas .gridcaracter .cara .cuatro {
+          background-color: #00AEEA;
+          grid-area: 1/4/2/5; }
 
-.novedades {
+.cuerpo .novedades {
   grid-area: novedades; }
-  .novedades .cardshome {
+  .cuerpo .novedades .centro {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: #001f33; }
+  .cuerpo .novedades .cardshome {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 30px; }
-    .novedades .cardshome div {
+    .cuerpo .novedades .cardshome div {
       box-shadow: -5px 5px 12px -5px rgba(0, 0, 0, 0.92);
       -webkit-box-shadow: -5px 5px 12px -5px rgba(0, 0, 0, 0.92);
       -moz-box-shadow: -5px 5px 12px -5px rgba(0, 0, 0, 0.92);
       display: inline-block;
-      width: 500px;
+      width: 504px;
       height: 400px;
-      border: 2px solid #3bb5c5;
+      border: 2px solid #00AEEA;
       background-color: #fbfdfd;
       border-radius: 20px; }
-      .novedades .cardshome div img {
+      .cuerpo .novedades .cardshome div img {
         width: 500px;
         border-radius: 19px 19px 0px 0px; }
-      .novedades .cardshome div h4 {
+      .cuerpo .novedades .cardshome div h4 {
         padding-left: 20px;
         padding-right: 20px; }
-      .novedades .cardshome div .mas {
+      .cuerpo .novedades .cardshome div .mas {
         margin: 20px;
         text-decoration: none;
         border: 1px #00ACE6 solid;
@@ -152,19 +158,23 @@
         font-size: small;
         font-style: italic;
         color: #00ACE6; }
-  .novedades .botonver a {
-    text-decoration: none;
-    color: floralwhite;
-    background-color: #072a40;
-    padding: 5px 25px 5px 25px;
-    border-radius: 30px; }
-    .novedades .botonver a:hover {
-      background-color: #00AEEA; }
+  .cuerpo .novedades .botonver {
+    text-align: center;
+    margin-top: 60px; }
+    .cuerpo .novedades .botonver a {
+      text-decoration: none;
+      font-size: 24px;
+      color: floralwhite;
+      background-color: #072a40;
+      padding: 5px 25px 5px 25px;
+      border-radius: 30px; }
+      .cuerpo .novedades .botonver a:hover {
+        background-color: #00AEEA; }
 
 .cuerpo .pie {
   background-color: #f9f7f0;
   box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.25);
-  height: 250px;
+  height: 200px;
   width: auto;
   margin-top: 300px;
   display: flex;
@@ -300,7 +310,7 @@
   display: flex;
   justify-content: space-around;
   margin: 50px; }
-  .cuerpo .flexgestor .txtgestor {
-    width: 45%; }
   .cuerpo .flexgestor .generalform .iniciar {
     text-align: center; }
+  .cuerpo .flexgestor .txtgestor {
+    width: 45%; }
