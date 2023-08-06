@@ -14,7 +14,7 @@
                 h2 {
                     text-align: center;
                     padding-top: 30px;
-                    background-color: #b2d9f7;
+                    background-color: $encabezado;
                     border-radius: 10px;
                     height: 100px;
                     width: 100%;
@@ -25,14 +25,14 @@
             .recientes {
                 width: 25%;
                 height: 630px;
-                border: 2px solid #bfc6ce;
+                border: 2px solid $gris-claro;
                 border-radius: 20px;
                 margin-top: 200px;
                 padding: 10px;
 
                 h5 {
                     text-align: center;
-                    color: #3d3c3b;
+                    color: $gris;
                     margin-top: 20px;
                     margin-bottom: 30px
                 }
@@ -45,7 +45,7 @@
 
                     li {
                         a {
-                            color: #3d3c3b;
+                            color: $gris;
                         }
                     }
                 }

@@ -1,9 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.logo img {
+  height: 70px;
+  width: auto; }
+
 .cuerpo {
   font-family: 'Asap', sans-serif;
   font-family: 'Be Vietnam Pro', sans-serif;
-  color: #001f33;
+  color: #072a40;
   width: auto; }
+
+.botoninicio h2 a {
+  font-size: 28px;
+  text-decoration: none;
+  color: #f5f5f5;
+  background-color: #072a40;
+  padding: 15px 35px 15px 35px;
+  border-radius: 30px;
+  box-shadow: 2px 3px 13px 7px rgba(133, 133, 133, 0.33);
+  -webkit-box-shadow: 2px 3px 13px 7px rgba(133, 133, 133, 0.33);
+  -moz-box-shadow: 2px 3px 13px 7px rgba(133, 133, 133, 0.33); }
+  .botoninicio h2 a:hover {
+    background-color: #00AEEA; }
+
+.centro {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: #072a40; }
+
+.mas {
+  margin: 20px;
+  text-decoration: none;
+  border: 1px #00AEEA solid;
+  border-radius: 30px;
+  padding: 7px;
+  font-size: small;
+  font-style: italic;
+  color: #00AEEA; }
+
+.botonver {
+  text-align: center;
+  margin-top: 60px; }
+  .botonver a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #f5f5f5;
+    background-color: #072a40;
+    padding: 5px 25px 5px 25px;
+    border-radius: 30px; }
+    .botonver a:hover {
+      background-color: #00AEEA; }
 
 .cuerpo .cabeza {
   height: 150px;
@@ -18,11 +64,8 @@
   padding-left: 50px;
   font-family: 'Asap', sans-serif;
   font-family: 'Be Vietnam Pro', sans-serif;
-  color: #001f33;
+  color: #072a40;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4); }
-  .cuerpo .cabeza .logo img {
-    height: 70px;
-    width: auto; }
   .cuerpo .cabeza nav .flexnav {
     display: flex;
     padding: 10px;
@@ -34,7 +77,7 @@
       list-style: none; }
       .cuerpo .cabeza nav .flexnav li a {
         text-decoration: none;
-        color: #f5fef5;
+        color: #f5f5f5;
         font-size: 24px;
         padding: 10px; }
 
@@ -61,10 +104,10 @@
       padding-left: 100px;
       padding-top: 70px; }
       .cuerpo .orden .carrusel .texto h2 {
-        color: white;
+        color: #f5f5f5;
         font-size: 40px; }
       .cuerpo .orden .carrusel .texto p {
-        color: white;
+        color: #f5f5f5;
         font-size: 24px; }
     .cuerpo .orden .carrusel .botoninicio {
       grid-area: boton;
@@ -72,25 +115,8 @@
       grid-row: 1/2;
       padding-top: 120px;
       padding-left: 100px; }
-      .cuerpo .orden .carrusel .botoninicio h2 a {
-        font-size: 28px;
-        text-decoration: none;
-        color: floralwhite;
-        background-color: #072a40;
-        padding: 15px 35px 15px 35px;
-        border-radius: 30px;
-        box-shadow: 2px 3px 13px 7px rgba(133, 133, 133, 0.33);
-        -webkit-box-shadow: 2px 3px 13px 7px rgba(133, 133, 133, 0.33);
-        -moz-box-shadow: 2px 3px 13px 7px rgba(133, 133, 133, 0.33); }
-        .cuerpo .orden .carrusel .botoninicio h2 a:hover {
-          background-color: #00AEEA; }
   .cuerpo .orden .caracteristicas {
     grid-area: caracteristicas; }
-    .cuerpo .orden .caracteristicas .centro {
-      text-align: center;
-      padding-top: 60px;
-      padding-bottom: 40px;
-      color: #001f33; }
     .cuerpo .orden .caracteristicas .gridcaracter {
       display: grid;
       align-items: center;
@@ -106,26 +132,17 @@
         padding-top: 30%;
         background-color: #9CDBFC; }
         .cuerpo .orden .caracteristicas .gridcaracter .cara .uno {
-          background-color: #0260A6;
           grid-area: 1/1/2/2;
           margin-right: 20px; }
         .cuerpo .orden .caracteristicas .gridcaracter .cara .dos {
-          background-color: #017CC0;
           grid-area: 1/2/2/3; }
         .cuerpo .orden .caracteristicas .gridcaracter .cara .tres {
-          background-color: #0197D6;
           grid-area: 1/3/2/4; }
         .cuerpo .orden .caracteristicas .gridcaracter .cara .cuatro {
-          background-color: #00AEEA;
           grid-area: 1/4/2/5; }
 
 .cuerpo .novedades {
   grid-area: novedades; }
-  .cuerpo .novedades .centro {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    color: #001f33; }
   .cuerpo .novedades .cardshome {
     display: flex;
     align-items: center;
@@ -141,34 +158,13 @@
       width: 504px;
       height: 450px;
       border: 2px solid #00AEEA;
-      background-color: #fbfdfd;
+      background-color: #f5f5f5;
       border-radius: 20px; }
       .cuerpo .novedades .cardshome div img {
         width: 500px;
         border-radius: 19px 19px 0px 0px; }
       .cuerpo .novedades .cardshome div h4 {
         padding: 20px; }
-      .cuerpo .novedades .cardshome div .mas {
-        margin: 20px;
-        text-decoration: none;
-        border: 1px #00ACE6 solid;
-        border-radius: 30px;
-        padding: 7px;
-        font-size: small;
-        font-style: italic;
-        color: #00ACE6; }
-  .cuerpo .novedades .botonver {
-    text-align: center;
-    margin-top: 60px; }
-    .cuerpo .novedades .botonver a {
-      text-decoration: none;
-      font-size: 24px;
-      color: floralwhite;
-      background-color: #072a40;
-      padding: 5px 25px 5px 25px;
-      border-radius: 30px; }
-      .cuerpo .novedades .botonver a:hover {
-        background-color: #00AEEA; }
 
 .cuerpo .pie {
   background-color: #f9f7f0;
@@ -244,11 +240,6 @@
   .cuerpo .novedades .cards .txtnovedad {
     grid-area: 1/1/2/4;
     height: 100px; }
-    .cuerpo .novedades .cards .txtnovedad .centro {
-      text-align: center;
-      padding-top: 60px;
-      padding-bottom: 40px;
-      color: #001f33; }
   .cuerpo .novedades .cards .noticia {
     box-shadow: -5px 5px 12px -5px rgba(0, 0, 0, 0.92);
     -webkit-box-shadow: -5px 5px 12px -5px rgba(0, 0, 0, 0.92);
@@ -256,23 +247,14 @@
     display: inline-block;
     width: 504px;
     height: 450px;
-    border: 2px solid #3bb5c5;
-    background-color: #fbfdfd;
+    border: 2px solid #00AEEA;
+    background-color: #f5f5f5;
     border-radius: 20px; }
     .cuerpo .novedades .cards .noticia img {
       width: 500px;
       border-radius: 19px 19px 0px 0px; }
     .cuerpo .novedades .cards .noticia h4 {
       padding: 20px; }
-    .cuerpo .novedades .cards .noticia .mas {
-      margin: 20px;
-      text-decoration: none;
-      border: 1px #00ACE6 solid;
-      border-radius: 30px;
-      padding: 7px;
-      font-size: small;
-      font-style: italic;
-      color: #00ACE6; }
     .cuerpo .novedades .cards .noticia .uno {
       grid-area: 2/1/3/2;
       height: 400px; }
@@ -310,18 +292,7 @@
       grid-area: 5/3/6/4;
       height: 400px; }
     .cuerpo .novedades .cards .noticia .botonver {
-      grid-area: 6/1/7/4;
-      text-align: center;
-      margin-top: 60px; }
-      .cuerpo .novedades .cards .noticia .botonver a {
-        text-decoration: none;
-        font-size: 24px;
-        color: floralwhite;
-        background-color: #072a40;
-        padding: 5px 25px 5px 25px;
-        border-radius: 30px; }
-        .cuerpo .novedades .cards .noticia .botonver a:hover {
-          background-color: #00AEEA; }
+      grid-area: 6/1/7/4; }
 
 .cuerpo main .flexhospitales {
   display: flex;
