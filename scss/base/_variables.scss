@@ -1,16 +1,51 @@
-$primario:#178ca4;
-$secundario:#9CDBFC;
-
+//Colores
+$primario: #178ca4;
+$secundario: #9CDBFC;
+$terciario-boton: #072a40;
+$boton-hover-borde: #00AEEA;
+$footer: #f9f7f0;
 $encabezado: #b2d9f7;
-
-$txt-n:#252525;
-$txt-b:#f5f5f5;
-
-$terciario-boton:#072a40;
-$boton-hover-borde:#00AEEA;
+$txt-n: #252525;
+$txt-b: #f5f5f5;
 $borde-b: #bfc6ce;
 $gris: #3d3c3b;
 $gris-claro: #bfc6ce;
-$footer:#f9f7f0;
 
-$fontsize:48px, 40px, 36px,24px,12px;
+$fontsize: 48px, 40px, 36px, 24px, 12px;
+
+%leermas {
+    margin: 20px;
+    border: 1px #00AEEA solid;
+    border-radius: 30px;
+    padding: 7px;
+    font-size: small;
+    font-style: italic;
+    color: #00AEEA;
+    text-decoration: none;
+    &:hover {
+        background-color: #9CDBFC;
+        border: 1px #bfc6ce solid;
+    }
+}
+
+%botonvermas {
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: #072a40;
+    padding: 5px 5px 10px 5px;
+    margin-top: 60px;
+    border-radius: 30px;
+    text-align: center;
+
+    &:hover {
+        background-color: #00AEEA;
+    }
+}
+
+%centrar {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: #072a40;
+}

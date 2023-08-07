@@ -15,7 +15,7 @@
         color: $terciario-boton;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
 
-            nav {
+        nav {
             .flexnav {
                 display: flex;
                 padding: 10px;
@@ -30,9 +30,12 @@
                     a {
                         text-decoration: none;
                         color: $txt-b;
-                        font-size: nth($fontsize,4);
+                        font-size: nth($fontsize, 4);
                         padding: 10px;
 
+                        &:hover {
+                            color: $terciario-boton;
+                        }
                     }
                 }
             }

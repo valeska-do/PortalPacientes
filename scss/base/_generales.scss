@@ -36,37 +36,21 @@
 }
 
 .centro {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    color: #072a40;
+    @extend %centrar;
 }
 
 .mas {
-    margin: 20px;
-    text-decoration: none;
-    border: 1px #00AEEA solid;
-    border-radius: 30px;
-    padding: 7px;
-    font-size: small;
-    font-style: italic;
-    color: #00AEEA;
+    @extend %leermas;
 }
 
 .botonver {
-    text-align: center;
-    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    @extend %botonvermas;
 
     a {
         text-decoration: none;
         font-size: 24px;
         color: #f5f5f5;
-        background-color: #072a40;
-        padding: 5px 25px 5px 25px;
-        border-radius: 30px;
-
-        &:hover {
-            background-color: #00AEEA;
-        }
     }
 }
