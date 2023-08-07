@@ -25,6 +25,8 @@ $fontsize: 48px, 40px, 36px, 24px, 12px;
     &:hover {
         background-color: #9CDBFC;
         border: 1px #bfc6ce solid;
+        font-weight: bold;
+        
     }
 }
 
@@ -40,6 +42,8 @@ $fontsize: 48px, 40px, 36px, 24px, 12px;
 
     &:hover {
         background-color: #00AEEA;
+        transform:  scale(1.2);
+
     }
 }
 

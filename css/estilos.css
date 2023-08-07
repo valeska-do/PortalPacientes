@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .logo img {
   height: 70px;
   width: auto; }
@@ -41,7 +46,8 @@
   text-decoration: none; }
   .mas:hover {
     background-color: #9CDBFC;
-    border: 1px #bfc6ce solid; }
+    border: 1px #bfc6ce solid;
+    font-weight: bold; }
 
 .botonver {
   width: 200px;
@@ -53,7 +59,8 @@
   border-radius: 30px;
   text-align: center; }
   .botonver:hover {
-    background-color: #00AEEA; }
+    background-color: #00AEEA;
+    transform: scale(1.2); }
 
 .centro {
   text-align: center;
@@ -85,13 +92,16 @@
     justify-content: space-between; }
     .cuerpo .cabeza nav .flexnav li {
       list-style: none; }
+      .cuerpo .cabeza nav .flexnav li:hover {
+        transform: scale(1.2); }
       .cuerpo .cabeza nav .flexnav li a {
         text-decoration: none;
         color: #f5f5f5;
         font-size: 24px;
         padding: 10px; }
         .cuerpo .cabeza nav .flexnav li a:hover {
-          color: #072a40; }
+          color: #072a40;
+          font-weight: bold; }
 
 .cuerpo .orden {
   display: grid;
@@ -127,6 +137,8 @@
       grid-row: 1/2;
       padding-top: 120px;
       padding-left: 100px; }
+      .cuerpo .orden .carrusel .botoninicio:hover {
+        transform: scale(1.2); }
   .cuerpo .orden .caracteristicas {
     grid-area: caracteristicas; }
     .cuerpo .orden .caracteristicas .gridcaracter {
