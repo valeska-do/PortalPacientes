@@ -1,216 +1,8 @@
  /* APLICACION DE MEDIA QUERIES */
  /* 1. INICIO */
 
- @media screen and (max-width: 1900px) {
-     .gridcaracter {
-         padding-left: 100px;
-     }
- }
 
- @media screen and (max-width: 1800px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 60px;
-             }
-         }
-
-     }
- }
-
- @media screen and (max-width: 1750px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 15px;
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 1700px) {
-     .orden {
-         grid-template-rows: auto 600px auto;
-
-         .caracteristicas {
-             .gridcaracter {
-                 grid-template-columns: 1fr 1fr;
-                 grid-template-rows: 1fr 1fr;
-                 padding-left: 100px;
-
-                 .cara {
-                     width: 700px;
-                     height: 250px;
-                     margin-bottom: 20px;
-
-                     .uno {
-                         h3 {
-                             padding-top: 50px;
-                             grid-area: 1/1/2/2;
-                         }
-                     }
-
-                     .dos {
-                         h3 {
-                             padding-top: 50px;
-                             grid-area: 1/2/2/3;
-                         }
-                     }
-
-                     .tres {
-                         h3 {
-                             padding-top: 50px;
-                             grid-area: 2/1/3/2;
-                         }
-                     }
-
-                     .cuatro {
-                         h3 {
-                             padding-top: 50px;
-                             grid-area: 2/2/3/3;
-                         }
-                     }
-                 }
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 1600px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 80px;
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 1550px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 50px;
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 1500px) {
-
-     .orden {
-         grid-template-rows: auto 600px auto;
-
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 100px;
-
-                 .cara {
-                     width: 600px;
-                 }
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 1410px) {
-     .cuerpo {
-         .cabeza {
-             height: 200px;
-             flex-direction: column;
-             align-items: center;
-             justify-content: space-around;
-
-             .orden {
-                 .caracteristicas {
-                     .gridcaracter {
-                         padding-left: 80px;
-                     }
-                 }
-
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 1350px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 20px;
-             }
-         }
-     }
- }
-
-
- @media screen and (max-width: 1300px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 100px;
-
-                 .cara {
-                     width: 500px;
-                 }
-             }
-         }
-
-     }
- }
-
- @media screen and (max-width: 1215px) {
-     .orden {
-         .carrusel {
-             .columnasimple {
-                 grid-template-columns: 100%;
-                 grid-template-rows: 200px 100px;
-                 grid-template-areas:
-                     "parrafos"
-                     "boton";
-                 align-items: center;
-
-                 .texto {
-                     grid-area: parrafos;
-
-                     h2 {
-                         font-size: 30px;
-                     }
-
-                     p {
-                         font-size: 20px;
-                     }
-                 }
-             }
-
-             .botoninicio {
-                 grid-area: boton;
-                 padding-bottom: 80px;
-             }
-
-             .caracteristicas {
-                 .gridcaracter {
-                     padding-left: 70px;
-                 }
-
-             }
-
-
-         }
-     }
- }
-
- @media screen and (max-width: 1150px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 30px;
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 1100px) {
+ @media screen and (max-width: 1690px) {
      .cuerpo {
          .cabeza {
              .flexnav {
@@ -223,20 +15,24 @@
 
              .caracteristicas {
                  .gridcaracter {
-                     height: 100%;
+                     height: auto;
+                     padding-left: 5%;
                      grid-template-columns: 1fr 1fr;
                      grid-template-rows: 1fr 1fr;
-                     grid-gap: 50px 50px;
-                     padding-left: 90px;
+                     grid-gap: 10px;
+                     padding-left: 3%;
+                     align-items: center;
+                     justify-content: center;
 
 
                      .cara {
-                         width: 400px;
+                         width: auto;
                          height: 250px;
-                         margin-bottom: 20px;
+                         margin-bottom: 2px;
 
                          .cara .uno {
                              grid-area: 1/1/2/2;
+
                          }
 
                          .cara .dos {
@@ -256,11 +52,13 @@
 
              .novedades {
                  .cardshome {
-                     align-items: flex-end;
-
                      div {
-                         width: 400px;
-                         height: 350px;
+                         width: 404px;
+                         height: 380px;
+
+                         h4 {
+                             font-size: nth($fontsize, 5);
+                         }
 
                          img {
                              width: 400px;
@@ -276,62 +74,97 @@
      }
  }
 
- @media screen and (max-width: 1060px) {
+
+ @media screen and (max-width: 1350px) {
      .cuerpo {
          .cabeza {
-             .flexnav {
-                 font-size: 20px;
-             }
-         }
-
-         .orden {
-             .caracteristicas {
-                 .gridcaracter {
-                     padding-left: 50px;
-                 }
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 980px) {
-     .cuerpo {
-         .cabeza {
-             height: 150px;
-
-             .flexnav {
-                 font-size: 15px;
-             }
+             height: 200px;
+             flex-direction: column;
+             align-items: center;
+             justify-content: space-around;
          }
 
          .orden {
              .carrusel {
                  .columnasimple {
                      .texto {
+                         padding-top: 100px;
+
+                         h1 {
+                             font-size: nth($fontsize, 3);
+                         }
+
                          p {
-                             font-size: 16px;
-                             padding-left: 10px;
+                             font-size: nth($fontsize, 5);
                          }
                      }
 
                      .botoninicio {
                          h2 {
                              a {
-                                 font-size: 20px;
+                                 font-size: nth($fontsize, 5);
                              }
                          }
                      }
                  }
              }
+         }
+     }
+ }
 
-             .caracteristicas {
-                 .gridcaracter {
-                     padding-left: 20px;
+ @media screen and (max-width: 981px) {
+     .cuerpo {
+         .cabeza {
+             .flexnav {
+                 li {
+                     a {
+                         font-size: 18px;
+                     }
                  }
+             }
+         }
+
+         .orden {
+             .carrusel {
+                 .columnasimple {
+                     height: 200px;
+                     display: flex;
+                     flex-direction: column;
+                     row-gap: 1px;
+                     align-items: center;
+                     justify-content: center;
+
+                     .texto {
+                         height: 200px;
+                         margin-top: 100px;
+                         padding: 30px;
+                     }
+
+                     .botoninicio {
+                         height: 100px;
+                         padding: 30px;
+                         margin: auto;
+
+                         h2 {
+                             a {
+                                 font-size: nth($fontsize, 5);
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+
+         .caracteristicas {
+             .gridcaracter {
+                 padding-left: 50px;
              }
          }
      }
  }
+
+
+
 
  @media screen and (max-width: 900px) {
      .orden {
@@ -384,77 +217,132 @@
  /* 2. NOVEDADES */
 
  @media screen and (max-width: 1650px) {
-     .novedades {
-         .cards {
-             grid-template-rows: 100px repeat(6 500px) 100px;
-             grid-template-columns: repeat(2 1fr);
-             align-items: center;
-             justify-content: center;
+     main {
+         .novedades {
+             .cards {
+                 grid-template-rows: 100px repeat(6 500px) 100px;
+                 grid-template-columns: repeat(2 1fr);
+                 align-items: center;
+                 justify-content: center;
 
-             .txtnovedad {
-                 grid-area: 1/1/2/3;
-             }
+                 .txtnovedad {
+                     grid-area: 1/1/2/3;
+                 }
 
-             .noticia .uno {
-                 grid-area: 2/1/3/2;
-             }
+                 .noticia .uno {
+                     grid-area: 2/1/3/2;
+                 }
 
-             .noticia .dos {
-                 grid-area: 2/2/3/3;
-             }
+                 .noticia .dos {
+                     grid-area: 2/2/3/3;
+                 }
 
-             .noticia .tres {
-                 grid-area: 3/1/4/2;
-             }
+                 .noticia .tres {
+                     grid-area: 3/1/4/2;
+                 }
 
-             .noticia .cuatro {
-                 grid-area: 3/2/4/3;
-             }
+                 .noticia .cuatro {
+                     grid-area: 3/2/4/3;
+                 }
 
-             .noticia .cinco {
-                 grid-area: 4/1/5/2;
-             }
+                 .noticia .cinco {
+                     grid-area: 4/1/5/2;
+                 }
 
-             .noticia .seis {
-                 grid-area: 4/2/5/3;
-             }
+                 .noticia .seis {
+                     grid-area: 4/2/5/3;
+                 }
 
-             .noticia .siete {
-                 grid-area: 5/1/6/2;
-             }
+                 .noticia .siete {
+                     grid-area: 5/1/6/2;
+                 }
 
-             .noticia .ocho {
-                 grid-area: 5/2/6/3;
-             }
+                 .noticia .ocho {
+                     grid-area: 5/2/6/3;
+                 }
 
-             .noticia .nueve {
-                 grid-area: 6/1/7/2;
-             }
+                 .noticia .nueve {
+                     grid-area: 6/1/7/2;
+                 }
 
-             .noticia .diez {
-                 grid-area: 6/2/7/3;
-             }
+                 .noticia .diez {
+                     grid-area: 6/2/7/3;
+                 }
 
-             .noticia .once {
-                 grid-area: 7/1/8/2;
-             }
+                 .noticia .once {
+                     grid-area: 7/1/8/2;
+                 }
 
-             .noticia .doce {
-                 grid-area: 7/2/8/3;
-             }
+                 .noticia .doce {
+                     grid-area: 7/2/8/3;
+                 }
 
-             .boton {
-                 grid-area: 8/1/9/3;
+                 .boton {
+                     grid-area: 8/1/9/3;
+                 }
              }
          }
      }
  }
 
  @media screen and (max-width: 860px) {
-     .novedades {
-         .cards {
-             display: flex;
+     main {
+         .novedades {
+             .cards {
+                 display: flex;
+                 flex-direction: column;
+             }
+         }
+     }
+ }
+
+ //  nosotros
+ @media screen and (max-width: 1350px) {
+     main {
+         .flexnosotros {
              flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             justify-content: space-around;
+
+
+             .txtnosotros {
+                 width: 100%;
+                 margin-top: 20px;
+
+             }
+
+             .recientes {
+                 margin-top: 20px;
+                 width: 800px;
+                 height: 400px;
+
+
+                 .listanoticia {
+                     width: 600px;
+                     height: 300px;
+                     justify-content: space-around;
+
+
+                 }
+
+             }
+         }
+     }
+
+     .flexhospitales {
+         flex-direction: column;
+
+         .txtred {
+             width: 90%;
+             align-items: center;
+             justify-content: center;
+         }
+
+         div {
+             .red {
+                 justify-content: center;
+             }
          }
      }
  }

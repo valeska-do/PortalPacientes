@@ -29,6 +29,8 @@
             grid-template-columns: repeat(3 1fr);
             margin-right: 50px;
             margin-left: 50px;
+            align-items: center;
+            justify-content: center;
 
             .txtnovedad {
                 grid-area: 1/1/2/4;
@@ -45,6 +47,7 @@
                 border: 2px solid $boton-hover-borde;
                 background-color: $txt-b;
                 border-radius: 20px;
+                
 
                 img {
                     width: 500px;
@@ -116,8 +119,14 @@
                     height: 400px;
                 }
 
-                .botonver {
-                    grid-area: 6/1/7/4;
+                .paginacion {
+                    // grid-area: 6/1/7/4;
+                    grid-auto-rows: auto;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    
                 }
             }
         }
