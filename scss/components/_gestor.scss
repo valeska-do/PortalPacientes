@@ -1,20 +1,17 @@
 //  PAGINA DE GESTOR
 .cuerpo {
-    .flexgestor {
-        display: flex;
-        justify-content: space-around;
-        margin: 50px;
+  .flexgestor {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px;
 
-        .generalform {
-            .iniciar {
-                text-align: center;
-            }
-            .formularioboo{
-
-            }
-        }
-        .txtgestor {
-            width: 45%;
-        }
-    }
+      .generalform {
+          .iniciar {
+              text-align: center;
+          }
+      }
+      .txtgestor {
+          width: 45%;
+      }
+  }
 }

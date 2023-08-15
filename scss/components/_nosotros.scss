@@ -1,55 +1,53 @@
 // Pagina nosotros
 .cuerpo {
-    main {
-        .flexnosotros {
-            display: flex;
-            width: 80%;
-            margin-left: 10%;
-            justify-content: space-between;
+  .flexnosotros {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
 
-            .txtnosotros {
-                width: 70%;
-                margin-top: 50px;
+    .txtnosotros {
+      width: 70%;
+      margin-top: 50px;
 
-                h1 {
-                    text-align: center;
-                    padding-top: 30px;
-                    background-color: $encabezado;
-                    border-radius: 10px;
-                    height: 100px;
-                    width: 100%;
-                    margin-bottom: 50px;
-                }
-            }
-
-            .recientes {
-                width: 25%;
-                height: 630px;
-                border: 2px solid $gris-claro;
-                border-radius: 20px;
-                margin-top: 200px;
-                padding: 10px;
-
-                h5 {
-                    text-align: center;
-                    color: $gris;
-                    margin-top: 20px;
-                    margin-bottom: 30px
-                }
-
-                .listanoticia {
-                    height: 500px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-
-                    li {
-                        a {
-                            color: $gris;
-                        }
-                    }
-                }
-            }
-        }
+      h1 {
+        text-align: center;
+        padding-top: 30px;
+        background-color: $encabezado;
+        border-radius: 10px;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 50px;
+      }
     }
+
+    .recientes {
+      width: 25%; 
+      height: 630px;
+      border: 2px solid $gris-claro;
+      border-radius: 20px;
+      margin-top: 200px;
+      padding: 10px;
+
+      h5 {
+        text-align: center;
+        color: $gris;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .listanoticia {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        li {
+          a {
+            color: $gris;
+          }
+        }
+      }
+    }
+  }
 }
