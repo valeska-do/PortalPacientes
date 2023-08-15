@@ -348,10 +348,8 @@
     width: 45%; }
 
 /* APLICACION DE MEDIA QUERIES */
-/* 1. INICIO */
-@media screen and (max-width: 1690px) {
-  .cuerpo .cabeza .flexnav {
-    font-size: 23px; }
+@media screen and (max-width: 1700px) {
+  /* 1. INICIO */
   .cuerpo .orden {
     grid-template-rows: auto 650px auto; }
     .cuerpo .orden .caracteristicas .gridcaracter {
@@ -383,68 +381,8 @@
       .cuerpo .orden .novedades .cardshome div img {
         width: 400px; }
   .cuerpo .pie {
-    margin-top: 100px; } }
-
-@media screen and (max-width: 1350px) {
-  .cuerpo .cabeza {
-    height: 200px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-  .cuerpo .orden .carrusel .columnasimple .texto {
-    padding-top: 100px; }
-    .cuerpo .orden .carrusel .columnasimple .texto h1 {
-      font-size: 36px; }
-    .cuerpo .orden .carrusel .columnasimple .texto p {
-      font-size: 18px; }
-  .cuerpo .orden .carrusel .columnasimple .botoninicio h2 a {
-    font-size: 18px; } }
-
-@media screen and (max-width: 981px) {
-  .cuerpo .cabeza .flexnav li a {
-    font-size: 18px; }
-  .cuerpo .orden .carrusel .columnasimple {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1px;
-    align-items: center;
-    justify-content: center; }
-    .cuerpo .orden .carrusel .columnasimple .texto {
-      height: 200px;
-      margin-top: 100px;
-      padding: 30px; }
-    .cuerpo .orden .carrusel .columnasimple .botoninicio {
-      height: 100px;
-      padding: 30px;
-      margin: auto; }
-      .cuerpo .orden .carrusel .columnasimple .botoninicio h2 a {
-        font-size: 18px; }
-  .cuerpo .caracteristicas .gridcaracter {
-    padding-left: 50px; } }
-
-@media screen and (max-width: 900px) {
-  .orden .caracteristicas .gridcaracter {
-    padding-left: 40px; }
-    .orden .caracteristicas .gridcaracter .cara {
-      width: 300px; } }
-
-@media screen and (max-width: 750px) {
-  .orden .caracteristicas .gridcaracter {
-    padding-left: 80px; }
-    .orden .caracteristicas .gridcaracter .cara {
-      width: 250px; } }
-
-@media screen and (max-width: 700px) {
-  .orden .caracteristicas .gridcaracter {
-    padding-left: 50px; } }
-
-@media screen and (max-width: 600px) {
-  .orden .caracteristicas .gridcaracter {
-    padding-left: 20px; } }
-
-/* 2. NOVEDADES */
-@media screen and (max-width: 1650px) {
+    margin-top: 100px; }
+  /* 2. NOVEDADES */
   main .novedades .cards {
     grid-template-rows: 100px repeat(6 500px) 100px;
     grid-template-columns: repeat(2 1fr);
@@ -479,12 +417,20 @@
     main .novedades .cards .boton {
       grid-area: 8/1/9/3; } }
 
-@media screen and (max-width: 860px) {
-  main .novedades .cards {
-    display: flex;
-    flex-direction: column; } }
-
 @media screen and (max-width: 1350px) {
+  .cuerpo .cabeza {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+  .cuerpo .orden .carrusel .columnasimple .texto {
+    padding-top: 100px; }
+    .cuerpo .orden .carrusel .columnasimple .texto h1 {
+      font-size: 36px; }
+    .cuerpo .orden .carrusel .columnasimple .texto p {
+      font-size: 18px; }
+  .cuerpo .orden .carrusel .columnasimple .botoninicio h2 a {
+    font-size: 18px; }
   main .flexnosotros {
     flex-direction: column;
     align-items: center;
@@ -509,3 +455,50 @@
       justify-content: center; }
     .flexhospitales div .red {
       justify-content: center; } }
+
+@media screen and (max-width: 981px) {
+  .cuerpo .cabeza .flexnav li a {
+    font-size: 18px; }
+  .cuerpo .orden .carrusel .columnasimple {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    align-items: center;
+    justify-content: center; }
+    .cuerpo .orden .carrusel .columnasimple .texto {
+      height: 200px;
+      margin-top: 100px;
+      padding: 30px; }
+    .cuerpo .orden .carrusel .columnasimple .botoninicio {
+      height: 100px;
+      padding: 30px;
+      margin: auto; }
+      .cuerpo .orden .carrusel .columnasimple .botoninicio h2 a {
+        font-size: 18px; }
+  .cuerpo .caracteristicas .gridcaracter {
+    padding-left: 50px; }
+  /* 2. NOVEDADES */
+  main .novedades .cards {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 900px) {
+  .orden .caracteristicas .gridcaracter {
+    padding-left: 40px; }
+    .orden .caracteristicas .gridcaracter .cara {
+      width: 300px; } }
+
+@media screen and (max-width: 750px) {
+  .orden .caracteristicas .gridcaracter {
+    padding-left: 80px; }
+    .orden .caracteristicas .gridcaracter .cara {
+      width: 250px; } }
+
+@media screen and (max-width: 700px) {
+  .orden .caracteristicas .gridcaracter {
+    padding-left: 50px; } }
+
+@media screen and (max-width: 600px) {
+  .orden .caracteristicas .gridcaracter {
+    padding-left: 20px; } }

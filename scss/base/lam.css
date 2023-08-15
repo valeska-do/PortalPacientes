@@ -1,10 +1,34 @@
+ /* 14.8 */
+ .gridcaracter {
+    height: auto;
+    padding-left: 1%;
+    grid-gap: 10px;
+    padding-left: 3%;
+    align-items: center;
+    justify-content: center;
+
+    .cara {
+        width: 300px;
+        height: 250px;
+        margin-bottom: auto;
+        h3{
+           font-size: nth($fontsize, 4);
+        }
+ 
+ 
  /* APLICACION DE MEDIA QUERIES */
+ /* 1. INICIO */
 
- @media screen and (max-width: 1700px) {
 
-     /* 1. INICIO */
+ @media screen and (max-width: 1690px) {
      .cuerpo {
-            .orden {
+         .cabeza {
+             .flexnav {
+                 font-size: 23px;
+             }
+         }
+
+         .orden {
              grid-template-rows: auto 650px auto;
 
              .caracteristicas {
@@ -18,6 +42,7 @@
                      align-items: center;
                      justify-content: center;
 
+
                      .cara {
                          width: auto;
                          height: 250px;
@@ -25,6 +50,7 @@
 
                          .cara .uno {
                              grid-area: 1/1/2/2;
+
                          }
 
                          .cara .dos {
@@ -64,8 +90,151 @@
              margin-top: 100px;
          }
      }
+ }
 
-     /* 2. NOVEDADES */
+
+ @media screen and (max-width: 1350px) {
+     .cuerpo {
+         .cabeza {
+             height: 200px;
+             flex-direction: column;
+             align-items: center;
+             justify-content: space-around;
+         }
+
+         .orden {
+             .carrusel {
+                 .columnasimple {
+                     .texto {
+                         padding-top: 100px;
+
+                         h1 {
+                             font-size: nth($fontsize, 3);
+                         }
+
+                         p {
+                             font-size: nth($fontsize, 5);
+                         }
+                     }
+
+                     .botoninicio {
+                         h2 {
+                             a {
+                                 font-size: nth($fontsize, 5);
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+ @media screen and (max-width: 981px) {
+     .cuerpo {
+         .cabeza {
+             .flexnav {
+                 li {
+                     a {
+                         font-size: 18px;
+                     }
+                 }
+             }
+         }
+
+         .orden {
+             .carrusel {
+                 .columnasimple {
+                     height: 200px;
+                     display: flex;
+                     flex-direction: column;
+                     row-gap: 1px;
+                     align-items: center;
+                     justify-content: center;
+
+                     .texto {
+                         height: 200px;
+                         margin-top: 100px;
+                         padding: 30px;
+                     }
+
+                     .botoninicio {
+                         height: 100px;
+                         padding: 30px;
+                         margin: auto;
+
+                         h2 {
+                             a {
+                                 font-size: nth($fontsize, 5);
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+
+         .caracteristicas {
+             .gridcaracter {
+                 padding-left: 50px;
+             }
+         }
+     }
+ }
+
+
+
+
+ @media screen and (max-width: 900px) {
+     .orden {
+         .caracteristicas {
+             .gridcaracter {
+                 padding-left: 40px;
+
+                 .cara {
+                     width: 300px;
+                 }
+             }
+         }
+     }
+ }
+
+ @media screen and (max-width: 750px) {
+     .orden {
+         .caracteristicas {
+             .gridcaracter {
+                 padding-left: 80px;
+
+                 .cara {
+                     width: 250px;
+                 }
+             }
+         }
+     }
+ }
+
+ @media screen and (max-width: 700px) {
+     .orden {
+         .caracteristicas {
+             .gridcaracter {
+                 padding-left: 50px;
+             }
+         }
+     }
+ }
+
+ @media screen and (max-width: 600px) {
+     .orden {
+         .caracteristicas {
+             .gridcaracter {
+                 padding-left: 20px;
+             }
+         }
+     }
+ }
+
+ /* 2. NOVEDADES */
+
+ @media screen and (max-width: 1650px) {
      main {
          .novedades {
              .cards {
@@ -134,43 +303,19 @@
      }
  }
 
- @media screen and (max-width: 1350px) {
-     .cuerpo {
-         .cabeza {
-             height: 200px;
-             flex-direction: column;
-             align-items: center;
-             justify-content: space-around;
-         }
-
-         .orden {
-             .carrusel {
-                 .columnasimple {
-                     .texto {
-                         padding-top: 100px;
-
-                         h1 {
-                             font-size: nth($fontsize, 3);
-                         }
-
-                         p {
-                             font-size: nth($fontsize, 5);
-                         }
-                     }
-
-                     .botoninicio {
-                         h2 {
-                             a {
-                                 font-size: nth($fontsize, 5);
-                             }
-                         }
-                     }
-                 }
+ @media screen and (max-width: 860px) {
+     main {
+         .novedades {
+             .cards {
+                 display: flex;
+                 flex-direction: column;
              }
          }
      }
+ }
 
-     //  nosotros
+ //  nosotros
+ @media screen and (max-width: 1350px) {
      main {
          .flexnosotros {
              flex-direction: column;
@@ -215,118 +360,6 @@
          div {
              .red {
                  justify-content: center;
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 981px) {
-     .cuerpo {
-         .cabeza {
-             .flexnav {
-                 li {
-                     a {
-                         font-size: 18px;
-                     }
-                 }
-             }
-         }
-
-         .orden {
-             .carrusel {
-                 .columnasimple {
-                     height: 200px;
-                     display: flex;
-                     flex-direction: column;
-                     row-gap: 1px;
-                     align-items: center;
-                     justify-content: center;
-
-                     .texto {
-                         height: 200px;
-                         margin-top: 100px;
-                         padding: 30px;
-                     }
-
-                     .botoninicio {
-                         height: 100px;
-                         padding: 30px;
-                         margin: auto;
-
-                         h2 {
-                             a {
-                                 font-size: nth($fontsize, 5);
-                             }
-                         }
-                     }
-                 }
-             }
-         }
-
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 50px;
-             }
-         }
-     }
-
-     /* 2. NOVEDADES */
-     main {
-         .novedades {
-             .cards {
-                 display: flex;
-                 flex-direction: column;
-             }
-         }
-     }
- }
-
-
-
-
- @media screen and (max-width: 900px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 40px;
-
-                 .cara {
-                     width: 300px;
-                 }
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 750px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 80px;
-
-                 .cara {
-                     width: 250px;
-                 }
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 700px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 50px;
-             }
-         }
-     }
- }
-
- @media screen and (max-width: 600px) {
-     .orden {
-         .caracteristicas {
-             .gridcaracter {
-                 padding-left: 20px;
              }
          }
      }
